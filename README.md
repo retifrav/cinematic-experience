@@ -15,8 +15,7 @@ QtQuick/QML features demonstration: animations, particles, effects, etc.
     - including new pictures for movies posters (and they are posters now, before it was DVD-covers)
 * tweaks in animations and graphical effects (mostly about time values)
 * adjusted layout geometry of the `FpsItem.qml`
-* renamed some settings (switches) labels, default values and re-hooked some effects (stars at the top of the screen are now hooked to a different switch, for example)
-* updated components versions in imports (`Qt Quick 2.9` instead of `Qt Quick 2.0`, for example)
+* renamed some settings (labels for switches), changed default values and re-hooked some effects (for example, stars at the top of the screen are now hooked to a different switch)
 * reworked the main list of movies
     - added `FastBlur` effect for all movie items in the list (`DelegateItem.qml`), except for the selected one
         + removed opacity for items, because it was messing with the blur
@@ -31,7 +30,8 @@ QtQuick/QML features demonstration: animations, particles, effects, etc.
     - changed description texts and screenshots
     - increased the touch surface for the corner grip
     - inline `images` width is now bound to the view `width` (with `Image.PreserveAspectFit`)
-* feng-shui
+* updated components versions in imports (`Qt Quick 2.9` instead of `Qt Quick 2.0`, for example)
+* some other feng-shui
 
 ## License
 
