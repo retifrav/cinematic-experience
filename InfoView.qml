@@ -114,7 +114,7 @@ Item {
     Item {
         id: viewItem
         anchors.right: parent.right
-        width: Math.min(620, parent.width)
+        width: parent.width > parent.height ? parent.width * 0.45 : parent.width * 0.7
         height: parent.height + priv.endCurly - 16
         y: 8
         visible: priv.poleOut
@@ -183,7 +183,7 @@ Item {
                 }
 
                 InfoViewItem {
-                    text: "<b>ShaderEffects</b><br/>Qt supports <u>ShaderEffect</u> and <u>ShaderEffectSource</u> QML elements which allow writing custom GLSL shader effects. This gives developers a lot of control to transform and enhance QML UIs by increasing dynamicity. In this demo, custom shader effect is used for lighting the movie delegates."
+                    text: "<b>ShaderEffects</b><br/>Qt supports <u>ShaderEffect</u> and <u>ShaderEffectSource</u> QML elements which allow writing custom GLSL shader effects. In this demo, custom shader effect is used for lighting the movie delegates."
                     image: "images/scr-shader.png"
                     switchedLayout: true
                 }

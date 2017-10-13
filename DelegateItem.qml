@@ -52,6 +52,7 @@ Item {
         color: "#DDDDDD"
         border.color: "gray"
         border.width: 1
+        antialiasing: true
 
         RectangularGlow {
             anchors.fill: posterFrame

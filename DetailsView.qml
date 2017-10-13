@@ -57,8 +57,8 @@ Item {
     Rectangle {
         id: backgroundItem
         anchors.centerIn: parent
-        width: Math.min(620, parent.width - 32)
-        height: Math.min(840, parent.height - 32)
+        width: parent.width > parent.height ? parent.width * 0.45 : parent.width * 0.8 //Math.min(620, parent.width - 32)
+        height: parent.width > parent.height ? parent.height * 0.85 : parent.height * 0.75 //Math.min(840, parent.height - 32)
         border.color: "#808080"
         border.width: 1
         opacity: 0.9
